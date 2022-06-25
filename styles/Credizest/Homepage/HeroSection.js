@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import BlobImage from "../../../public/svg/blob.svg";
+
 export const HeroSection_Container = styled.div`
   color: white;
   padding: 10% 0;
@@ -14,7 +16,7 @@ export const HeroSection_Container__Column = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 2em;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -79,25 +81,10 @@ export const HeroSection_Container__Row = styled.div`
 
 export const HeroSection_Container__ShowCase = styled.div`
   position: relative;
-  z-index: 7;
 `;
 
 export const HeroSection_Container__ShowCase__Image = styled.div`
-  position: absolute;
-  top: -150px;
-  right: -100px;
-  z-index: 3;
-
-  // img {
-  //   width: 100% !important;
-  //   height: 100% !important;
-  //   max-width: 100% !important;
-  // }
-
-  @media (max-width: 768px) {
-    top: 0;
-    right: 0;
-  }
+  width: auto;
 `;
 
 export default HeroSection_Container;

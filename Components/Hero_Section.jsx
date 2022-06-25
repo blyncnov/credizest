@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { IoIosArrowDropright } from "react-icons/io";
 import { BsCloudDownload } from "react-icons/bs";
@@ -18,7 +19,6 @@ import {
 } from "../styles/Credizest/constants/helpers";
 
 import Card from "./assets/Card";
-import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -49,27 +49,22 @@ const Hero = () => {
                 </Credizest__Button>
               </Flex__Item__Widget>
             </HeroSection_Container__Row>
+            {/* _______SECOND _______SECTION__________ */}
             <HeroSection_Container__Row>
               <HeroSection_Container__ShowCase>
-                <HeroSection_Container__ShowCase__Image>
-                  <Image
-                    src="/svg/blob.svg"
-                    height="1000"
-                    width="1000"
-                    alt="showcaseimage"
-                  />
-                </HeroSection_Container__ShowCase__Image>
+                <HeroSection_Container__ShowCase__Image></HeroSection_Container__ShowCase__Image>
                 <Card />
+                <br/>
+                <div className="show__text">
+                  <h4>Welcome to Credizest</h4>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Rem autem esse explicabo reprehenderit praesentium iste,
+                    error omnis dignissimos adipisci molestiae at asperiores
+                    vero ducimus, eaque totam est quia unde eius.
+                  </p>
+                </div>
               </HeroSection_Container__ShowCase>
-              <div className="show__text">
-                <h4>Welcome to Credizest</h4>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-                  autem esse explicabo reprehenderit praesentium iste, error
-                  omnis dignissimos adipisci molestiae at asperiores vero
-                  ducimus, eaque totam est quia unde eius.
-                </p>
-              </div>
             </HeroSection_Container__Row>
           </HeroSection_Container__Column>
         </HeroSection_Container>

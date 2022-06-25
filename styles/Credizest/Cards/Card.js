@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const __Card = styled.div`
   width: 450px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     width: 100%;
   }
 `;

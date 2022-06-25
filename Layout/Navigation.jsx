@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { FaTimes } from "react-icons/fa";
+import { RiBarChartHorizontalLine } from "react-icons/ri";
 
 import {
   Navigation__Container,
@@ -16,6 +19,12 @@ import {
 } from "../styles/Credizest/constants/helpers";
 
 const Navigation = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const isBarClickHandler = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
     <>
       <Navigation__Container>
@@ -28,7 +37,13 @@ const Navigation = () => {
                     <h2>Credizest</h2>
                   </Navigation__Logo>
                 </div>
-                <div className="Navigation__right">
+                <div
+                  className={
+                    isClicked
+                      ? "Navigation__right openActive"
+                      : "Navigation__right"
+                  }
+                >
                   <Navigation__List>
                     <Navigation__List__Items>Home</Navigation__List__Items>
                     <Navigation__List__Items>Blog</Navigation__List__Items>
@@ -37,7 +52,18 @@ const Navigation = () => {
                       Get Started
                     </Navigation__List__Items>
                   </Navigation__List>
-                  <Credizest__Button padding="15px 30px">Sign In</Credizest__Button>
+                  <Credizest__Button padding="15px 30px">
+                    Sign In
+                  </Credizest__Button>
+                </div>
+                <div className="Navigation__Mobile" onClick={isBarClickHandler}>
+                  <h1>
+                    {isClicked ? (
+                      <FaTimes style={{ color: "black" }} />
+                    ) : (
+                      <RiBarChartHorizontalLine />
+                    )}
+                  </h1>
                 </div>
               </Navigation__Container__Rows>
             </Navigation__Container__Column>

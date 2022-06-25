@@ -43,9 +43,47 @@ export const Navigation__Container__Rows = styled.div`
       box-shadow: rgb(0 0 0 / 2%) 0px 1px 0px, rgb(0 0 0 / 3%) 0px 0px 8px,
         rgb(0 0 0 / 8%) 0px 20px 30px;
     }
-
   }
 
+  .Navigation__Mobile {
+    display: none;
+    cursor: pointer;
+    color: white !important;
+  }
+
+  @media (max-width: 768px) {
+    .Navigation__right {
+      display: block;
+      width: 99%;
+      position: fixed;
+      top: 0.05em;
+      left: 0;
+      transition: transform 0.2s ease-in, opacity 0.3s ease-in;
+      background-color: white;
+      height: 99vh;
+      padding: 2em;
+      color: #000;
+      border-radius: 0 0.5em 0.5em 0;
+      z-index: 99999;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      transform: scale(3);
+    }
+
+    .openActive {
+      opacity: 100%;
+
+      transform: scale(1);
+    }
+
+    .Navigation__Mobile {
+      display: block;
+      position: relative;
+      z-index: 999999899999;
+    }
+  }
 `;
 
 export const Navigation__Logo = styled.div`
@@ -64,22 +102,31 @@ export const Navigation__List = styled.ul`
   align-items: center;
 
   @media (max-width: 768px) {
-    display: none;
+    display: block;
+
+    li {
+      color: black;
+      border-bottom: 1px solid #ccc;
+      padding: 1em 0;
+    }
   }
 `;
 
 export const Navigation__List__Items = styled.li`
   width: auto;
   font-size: 1.1rem;
-  // transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   color: white;
 
   &:hover {
     color: #dff6ff;
-    transform: scale(1.01);
-    margin-left: 0.1em;
-    padding-bottom: 0.1em;
+  }
+
+  @media (max-width: 768px) {
+    &:hover {
+      color: #333;
+    }
   }
 `;
 
