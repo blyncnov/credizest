@@ -27,6 +27,7 @@ export const HeroSection_Container__Row = styled.div`
   flex-direction: column;
   position: relative;
   gap: 1.6em;
+  padding: 5px 0;
 
   h1 {
     font-size: 50px;
@@ -59,6 +60,7 @@ export const HeroSection_Container__Row = styled.div`
 
   @media (max-width: 768px) {
     gap: 1.5em;
+    padding:  0;
 
     h1 {
       font-size: 34px;
