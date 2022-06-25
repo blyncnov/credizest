@@ -58,7 +58,7 @@ export const Navigation__Container__Rows = styled.div`
       position: fixed;
       top: 0.05em;
       left: 0;
-      transition: transform 0.2s ease-in, opacity 0.3s ease-in;
+      transition: clip-path 0.3s ease-in, opacity 0.3s ease-in;
       background-color: white;
       height: 99vh;
       padding: 2em;
@@ -69,13 +69,14 @@ export const Navigation__Container__Rows = styled.div`
         rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
       backdrop-filter: blur(5px);
       opacity: 0;
-      transform: scale(3);
+      // transform: scale(3);
+      clip-path: circle(1%);
     }
 
     .openActive {
       opacity: 100%;
-
-      transform: scale(1);
+      clip-path: circle(100%);
+      // transform: scale(1);
     }
 
     .Navigation__Mobile {
