@@ -65,6 +65,7 @@ export const HeroSection_Container__Row = styled.div`
     }
 
     .show__text {
+      display: none;
       position: relative;
       border-radius: 2px;
       bottom: 0;
