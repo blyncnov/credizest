@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Header from "../Layout/Header";
+import Brands from "../Components/Brands";
 
 export default function Home({ news }) {
   return (
@@ -12,6 +13,7 @@ export default function Home({ news }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Brands />
     </>
   );
 }

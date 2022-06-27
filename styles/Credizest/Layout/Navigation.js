@@ -68,15 +68,13 @@ export const Navigation__Container__Rows = styled.div`
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
         rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
       backdrop-filter: blur(5px);
-      opacity: 0;
-      // transform: scale(3);
+      opacity: 60%;
       clip-path: circle(1%);
     }
 
     .openActive {
       opacity: 100%;
       clip-path: circle(100%);
-      // transform: scale(1);
     }
 
     .Navigation__Mobile {
