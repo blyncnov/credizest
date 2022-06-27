@@ -24,6 +24,7 @@ export const Brands__Grid = styled.div`
   .Brand__Box {
     width: auto;
     text-align: center;
+    padding: 0 1em;
   }
 
   @media (max-width: 768px) {
