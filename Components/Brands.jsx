@@ -4,7 +4,7 @@ import Image from "next/image";
 import BrandIdentity1 from "../public/brands/bamboo.png";
 import BrandIdentity2 from "../public/brands/chakra.png";
 import BrandIdentity3 from "../public/brands/micro.png";
-import BrandIdentity4 from "../public/brands/workpay.png";
+import BrandIdentity4 from "../public/brands/workpay.png"; 
 import BrandIdentity5 from "../public/brands/chry.png";
 
 import {
@@ -13,10 +13,7 @@ import {
   Brands__Grid,
 } from "../styles/Credizest/Homepage/Brands";
 
-import {
-  Maximum__Width__Widget,
-  Credizest__Button,
-} from "../styles/Credizest/constants/helpers";
+import { Maximum__Width__Widget } from "../styles/Credizest/constants/helpers";
 
 const Brands = () => {
   return (

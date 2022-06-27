@@ -23,3 +23,8 @@ a {
   height: 100vh;
   width: 100vw;
 }
+
+.prac {
+  width: 100%;
+  background-color: #1362DF;
+}

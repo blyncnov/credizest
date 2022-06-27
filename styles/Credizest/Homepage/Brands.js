@@ -9,6 +9,13 @@ export const Brands__Container = styled.div`
 export const Brands__Section = styled.div`
   padding: 2em 0;
   text-align: center;
+
+  .Brand__Header {
+    h4 {
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
 `;
 
 export const Brands__Grid = styled.div`

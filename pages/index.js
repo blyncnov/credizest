@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Header from "../Layout/Header";
 import Brands from "../Components/Brands";
+import Goals from "../Components/Goals";
 
 export default function Home({ news }) {
   return (
@@ -14,6 +15,7 @@ export default function Home({ news }) {
       </Head>
       <Header />
       <Brands />
+      <Goals />
     </>
   );
 }
