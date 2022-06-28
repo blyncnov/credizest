@@ -32,7 +32,7 @@ const Goals = () => {
                       width="80"
                       height="80"
                     />
-                    <h2>{goals.title}</h2>
+                    <h3>{goals.title}</h3>
                     <p>{goals.desc}</p>
                   </Goals__Grid__Box>
                 );

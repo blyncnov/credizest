@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "../Layout/Header";
 import Brands from "../Components/Brands";
 import Goals from "../Components/Goals";
+import AboutSection from "../Components/AboutSection";
 
 export default function Home({ news }) {
   return (
@@ -16,6 +17,7 @@ export default function Home({ news }) {
       <Header />
       <Brands />
       <Goals />
+      <AboutSection />
     </>
   );
 }

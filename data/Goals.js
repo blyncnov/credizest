@@ -18,7 +18,7 @@ export const Goals__Infomations = [
   {
     id: 3,
     icon: Icon3,
-    title: "One platform 🏆",
+    title: "Plan Your Next Round 🏆",
     desc: " Gone are the days of using four platforms to just do one thing. Get world-class cap table, fundraising and compliance features all in one place..",
   },
 ];
