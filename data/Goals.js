@@ -1,6 +1,6 @@
-import Icon1 from "../public/svg/medal.png";
-import Icon2 from "../public/svg/speaker.png";
-import Icon3 from "../public/svg/tine.png";
+import Icon1 from "../public/svg/verified.webp";
+import Icon2 from "../public/svg/time.webp";
+import Icon3 from "../public/svg/lock.png";
 
 export const Goals__Infomations = [
   {
