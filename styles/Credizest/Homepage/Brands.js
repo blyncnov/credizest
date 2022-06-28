@@ -7,7 +7,7 @@ export const Brands__Container = styled.div`
 `;
 
 export const Brands__Section = styled.div`
-  padding: 2em 0;
+  padding: 2em 0 1em 0;
   text-align: center;
 
   .Brand__Header {
@@ -21,7 +21,7 @@ export const Brands__Section = styled.div`
 export const Brands__Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  padding: 1em 0;
+  padding: 2em 0 1em 0;
   justify-content: center;
   align-items: center;
   text-align: center;
