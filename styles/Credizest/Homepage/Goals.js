@@ -26,7 +26,7 @@ export const Goals__Grid__Section = styled.div`
 export const Goals__Grid__Box = styled.div`
   padding: 1em;
   border-radius: 5px;
-  border: 1px solid #e3ebf6;
+  border: .1px solid #e3ebf6;
   text-align: center;
   box-shadow: 0px 1px 30px rgba(141, 157, 168, 0.01),
     0px 1px 16px rgba(141, 157, 168, 0.02);
