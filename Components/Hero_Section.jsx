@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 
 import { IoIosArrowDropright } from "react-icons/io";
 import { BsCloudDownload } from "react-icons/bs";
@@ -37,16 +37,26 @@ const Hero = () => {
                 nam. Ab, ipsa. Porro, quaerat enim itaque sed dolorum facilis.
               </p>
               <Flex__Item__Widget>
-                <Credizest__Button>
-                  Get Started for Free <IoIosArrowDropright />
-                </Credizest__Button>
-                <Credizest__Button
-                  bg="transparent"
-                  color="black"
-                  border="2px solid #ffffff"
-                >
-                  Download Our App <BsCloudDownload />
-                </Credizest__Button>
+                <Link href="/auth/signup">
+                  <a style={{ color: "inherit" }}>
+                    <Credizest__Button>
+                      {" "}
+                      Get Started for Free <IoIosArrowDropright />
+                    </Credizest__Button>
+                  </a>
+                </Link>
+
+                <Link href="/auth/login">
+                  <a style={{ color: "inherit" }}>
+                    <Credizest__Button
+                      bg="transparent"
+                      color="black"
+                      border="2px solid #ffffff"
+                    >
+                      Download Our App <BsCloudDownload />
+                    </Credizest__Button>
+                  </a>
+                </Link>
               </Flex__Item__Widget>
             </HeroSection_Container__Row>
             {/* _______SECOND _______SECTION__________ */}
@@ -54,7 +64,7 @@ const Hero = () => {
               <HeroSection_Container__ShowCase>
                 <HeroSection_Container__ShowCase__Image></HeroSection_Container__ShowCase__Image>
                 <Card />
-                <br/>
+                <br />
                 <div className="show__text">
                   <h4>Welcome to Credizest</h4>
                   <p>

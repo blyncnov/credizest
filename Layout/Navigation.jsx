@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 import { FaTimes } from "react-icons/fa";
 import { RiBarChartHorizontalLine } from "react-icons/ri";
@@ -52,9 +53,14 @@ const Navigation = () => {
                       Get Started
                     </Navigation__List__Items>
                   </Navigation__List>
-                  <Credizest__Button padding="15px 30px">
-                    Sign In
-                  </Credizest__Button>
+
+                  <Link href="/auth/login">
+                    <a style={{ color: "inherit" }}>
+                      <Credizest__Button padding="15px 30px">
+                        Sign In
+                      </Credizest__Button>
+                    </a>
+                  </Link>
                 </div>
                 <div className="Navigation__Mobile" onClick={isBarClickHandler}>
                   <h1>
