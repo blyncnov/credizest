@@ -6,6 +6,7 @@
   align-items: center;
   background-color: #1363df;
   overflow: scroll;
+  padding: 2em 0;
 }
 
 .login__box {
