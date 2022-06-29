@@ -5,6 +5,7 @@ import Header from "../Layout/Header";
 import Brands from "../Components/Brands";
 import Goals from "../Components/Goals";
 import AboutSection from "../Components/AboutSection";
+import Footer from "../Layout/Footer";
 
 export default function Home({ news }) {
   return (
@@ -18,6 +19,7 @@ export default function Home({ news }) {
       <Brands />
       <Goals />
       <AboutSection />
+      <Footer />
     </>
   );
 }
