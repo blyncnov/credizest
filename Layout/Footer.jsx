@@ -20,9 +20,9 @@ const Footer = () => {
           <Footer__Section>
             <Footer__Part>
               <div>
-                <h1>
+                <h2>
                   <span>Credizest</span>
-                </h1>
+                </h2>
                 <br />
                 <p>
                   Borrow LUSD against ETH & Building a global financial platform
@@ -52,6 +52,11 @@ const Footer = () => {
               </Footer__Part>
             </Footer__Part>
           </Footer__Section>
+
+          <hr style={{ color: "#ccc", opacity: ".2", margin: "2em 0 0 0 " }} />
+          <h6 style={{ textAlign: "center", margin: "1em 0" }}>
+            @credizest | Platform
+          </h6>
         </Maximum__Width__Widget>
       </Footer__Container>
     </>
