@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import {
   Maximum__Width__Widget,
@@ -27,7 +28,7 @@ const Footer = () => {
                 <p>
                   Borrow LUSD against ETH & Building a global financial platform
                   for lending/borrowing crypto assests and real world assets as
-                  NFTS Consectetur, porro dolore. Animi, vitae! 
+                  NFTS Consectetur, porro dolore. Animi, vitae!
                 </p>
               </Footer__Column>
               <Footer__Part>
@@ -35,10 +36,26 @@ const Footer = () => {
                   <h3>
                     <span>Quick Links</span>
                   </h3>
-                  <li>Home</li>
-                  <li>Blogs</li>
-                  <li>Giftcards</li>
-                  <li>Get Started</li>
+                  <Link href="/">
+                    <a style={{ color: "inherit" }}>
+                      <li>Home</li>
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a style={{ color: "inherit" }}>
+                      <li>Blogs</li>
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a style={{ color: "inherit" }}>
+                      <li>Giftcards</li>
+                    </a>
+                  </Link>
+                  <Link href="/auth/signup">
+                    <a style={{ color: "inherit" }}>
+                      <li>Get Started</li>
+                    </a>
+                  </Link>
                 </Footer__Column>
               </Footer__Part>
               <Footer__Part>

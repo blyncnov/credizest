@@ -37,10 +37,6 @@ export const Footer__Column = styled.div`
     margin: 0.8em 0;
     font-size: 13px;
   }
-
-  li {
-    cursor: pointer;
-  }
 `;
 
 export default Footer__Container;
